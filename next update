@@ -1,0 +1,103 @@
+version 1.0 future update 
+
+
+Android Health Checker GUI
+A simple graphical tool for checking the health of Android Studio projects!
+Run all your common static analysis, resource checks, lint, and build diagnostics through an easy-to-use desktop interface.
+
+Features
+Point-and-click interface for scanning Android projects
+
+Supports checks for:
+
+Full App Scan
+
+Manifest, Kotlin, Dimens, Colors, Strings, and Resource files
+
+Stub generation
+
+Lint checks
+
+Syntax checks
+
+HTML report generation
+
+APK build
+
+
+Customizable: Select which checks to run each time
+
+Summary pane: See at-a-glance which files have issues, with clickable file names for easy editing
+
+Console output: Watch detailed logs as your checks run
+
+Open/edit files in place (with syntax highlighting if available)
+
+HTML Report viewer: Open generated reports in your browser with one click
+
+Requirements
+Python 3.7+
+
+Tkinter (comes with most Python installations)
+
+Android Studio project to scan
+
+android_health_check.py script must be in the same directory
+
+Installation
+Just copy android_health_checker_gui.py to any folder
+(No installer needed!)
+
+Usage
+Start the app:
+
+sh
+Copy code
+python android_health_checker_gui.py
+Select your Android project directory using the Browse button.
+
+Choose checks to perform by ticking the boxes.
+
+(Optional) Set HTML report output file (default: report.html).
+
+Click Start to run checks!
+
+View results:
+
+Console output is shown in the app.
+
+A summary bar shows each category’s health (click items to view/edit).
+
+If you generated a report, use View Report to open it.
+
+Edit detected issues directly from the summary pane.
+
+Typical Workflow
+Open your Android Studio project directory.
+
+Select the checks you care about (lint, manifest, build, etc).
+
+Hit Start and review the output.
+
+Click file names in the summary pane to quickly review and fix issues.
+
+Rerun checks as needed!
+
+Troubleshooting
+No checks run? Make sure you’ve selected at least one box.
+
+Missing dependencies? Ensure your Python has Tkinter.
+
+No output? Check that your project directory is valid and contains expected files.
+
+Can’t open files? The app attempts to open standard Android Studio structure (e.g., app/src/main/res/values).
+
+Customization
+Add or remove checks by editing the _add_checkbuttons() function in the script.
+
+Update summary categories in the SUMMARY_CATEGORIES list.
+
+License
+Provided as-is for personal or educational use.
+Feel free to modify or extend!
+
